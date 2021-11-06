@@ -5,8 +5,8 @@
 	"main": "index.js",
 	"scripts": {
 		"dev": "concurrently \"yarn dev:app\" \"yarn dev:server\"",
-		"dev:app": "nodemon app.js",
-		"dev:server": "nodemon server.js"
+		"dev:app": "nodemon src/client/app.js",
+		"dev:server": "nodemon src/server/server.js"
 	},
 	"repository": {
 		"type": "git",
