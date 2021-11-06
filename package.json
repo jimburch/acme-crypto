@@ -1,0 +1,31 @@
+{
+	"name": "acme-crypto",
+	"version": "1.0.0",
+	"description": "A Slack bot to track and update the gang to the moon",
+	"main": "index.js",
+	"scripts": {
+		"dev": "concurrently \"yarn dev:app\" \"yarn dev:server\"",
+		"dev:app": "nodemon app.js",
+		"dev:server": "nodemon server.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/JimBurch/acme-crypto.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/JimBurch/acme-crypto/issues"
+	},
+	"homepage": "https://github.com/JimBurch/acme-crypto#readme",
+	"dependencies": {
+		"@slack/bolt": "^3.8.1",
+		"express": "^4.17.1"
+	},
+	"devDependencies": {
+		"concurrently": "^6.3.0",
+		"dotenv": "^10.0.0",
+		"nodemon": "^2.0.14"
+	}
+}
